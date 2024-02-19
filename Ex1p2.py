@@ -50,3 +50,11 @@ def simpsons_rule(f, a, b, n):
     return (h / 3) * (y[0] + 4 * sum(y[i] for i in range(1, n, 2)) + 2 * sum(y[i] for i in range(2, n, 2)) + y[n])
 
 
+
+
+def t_distribution(x, df):
+    """
+    Computes the value of the t-distribution PDF for a given x and degrees of freedom.
+    """
+    coeff = math.gamma((df + 1) / 2) / (math.sqrt(df * math.pi) * math.gamma(df / 2))
+    return coeff * (1 + x ** 2 / df) ** (-(df + 1) / 2)
