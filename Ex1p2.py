@@ -1,4 +1,4 @@
-# I got help from ChatGPT
+# I got help from ChatGPT, I would like to say this code is incomplete and I just summited as much as I have.
 import math
 import random
 
